@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MKEVENTS</title>	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> 
+	<link rel='stylesheet' type='text/css' href='css/style.css'>
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Play' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<!--Facebook API-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1686825698222157',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+	<nav>
+		<div id='navBar'>
+		
+			<ul class="navMenu">
+				<img id='logo' src='img/MKLogo.jpg' alt='MK Events Logo'>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Our Story</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section>
+		<div class="title">
+			<h1 class="titleText centerText">  (= Text Over Image =)</h1>
+		</div>
+	</section>
+	<section class="content">
+		<div class="wrapper">
+			<div class="colMain">
+				<h3> Here at Uniquely MK Events we hope to make your special events stress-free and memorable in whatever way you need! Whether it is a quick chat to get your ducks in a row, full-blown planning and execution, or somewhere in between, we use our experience and expertise to make your vision come to life.</h3>
+			</div>
+			<div class="colSide">
+			
+			<iframe class='noScroll' src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Funiquelymkevents&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			
+			</div>
+		</div>		
+	</section>
+	<ul class="socSide"> 
+		<li><i class="fa fa-facebook"></i></li>
+		<li><i class="fa fa-twitter"></i></li>
+		<li><i class="fa fa-instagram"></i></li>
+	</ul>	
+</body>
+</html>
