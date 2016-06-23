@@ -4,6 +4,7 @@ html {
 	overflow-y: scroll;
 	
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
   margin: 0;
@@ -12,50 +13,58 @@ html {
  }
 
 h3 {
-	font-family: 'Shadows Into Light', cursive;
-	font-size: 1.5em;
+	font-family: Play;
+	font-size: 3em;
+	color: #FF0066;
+	padding-top: 1.375em;
+}
+
+p {
+	margin: 1.375em;
+	font: 1.2em
 }
 .centerText {
 	text-align: center;
 }
 
 /* ---------navbar---------------*/
-#navBar > ul
-{
-	background: rgba(106, 15, 194, .1);
-}
 #navBar li {
 	display: inline-block;
 	float: right;
 	padding-top: 1.3em;
 }	
 #navBar {
+	background: #995DD5;
 	height: 4em;
 	}
 #navBar #logo {
 	height: 4em;
 }
 #navBar a {
+		text-transform: uppercase;
+		color:#DDC9F1;
 		margin: 0 1em;
 		padding: 5px;
-		color: #FF0066;
 		font-weight: 900;
 		text-decoration: none;
 		font-size: 1.2em;
 }
 #navBar a:hover {
-	text-decoration: underline;
+	color:#6F18C4;
+	transition: ease 1s;
 }
+
 .socSide {
 	position: fixed;
 	left:5%;
-	top: 60%;
+	top: 70%;
 	margin-left: .3em;
 }
 .socSide li{
 	margin: 1em;	
 	font-size: 2em;
 	list-style: none;
+	color: #6A0FC2;
 }
 
 .wrapper {
@@ -71,6 +80,7 @@ h3 {
 }
 .colMain {
 	float:left;
+	padding: 25px;
 }
 .colSide {
 	border-left: #6A0FC2 1px solid;
@@ -94,9 +104,72 @@ div.title {
 	overflow: auto;
 }
 .content .wrapper{
-	margin-top: 3em;
 	background: rgba(106, 15, 194, .1);
 	border-radius: 5px;
-	padding: 25px;
+	height: 100%;
 
+}
+
+
+/* -------Image Section--------*/
+
+img.left {
+	height: 48%;
+	width: 48%;
+
+}
+img.right {
+	height: 48%;
+	width: 48%;
+
+}
+div.imgGallery {
+	width: 600px;
+	padding: 5em 0;
+	margin: 0 auto;
+
+}
+body > section.content > div:nth-child(2) {
+	background: rgba(106, 15, 194, .4);
+}
+body > section.content > div:nth-child(3) {
+	background: rgba(106, 15, 194, .8);
+}
+.imgItem h2 {
+	z-index: 20;
+	top: 100px;
+	position: relative;
+}
+
+/* profile section */
+.about {
+	padding-top: 1.375em;
+	color:#DDC9F1;
+}
+.about h3 {
+color:#DDC9F1;
+text-align: center;
+}
+
+.profile {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.headShot {
+	height: 9em;
+	width:  9em;
+	border-radius: 50%;
+	float: left;
+}
+.headShotMini .headShot {
+	height: 3em;
+	width:  3em;
+	border-radius: 50%;
+	float: right
+}
+
+.copyright{
+	padding-top:4em;
+	float: right;
 }
