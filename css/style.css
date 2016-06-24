@@ -23,8 +23,10 @@ p {
 	margin: 1.375em;
 	font: 1.2em
 }
-.twitter-timeline a {
-	margin: 0 auto;
+div.centerDiv {
+	margin-left: 25%;
+
+
 }
 .centerText {
 	text-align: center;
