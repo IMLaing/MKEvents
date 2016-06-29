@@ -6,7 +6,21 @@
     box-sizing: inherit; 
 }
 body {
-background: rgba(106, 15, 194, .1);
+	background: rgba(106, 15, 194, .1);
+	font-family: Play;
+}
+
+/*-----CUSTOM----CSS----CLASSES------*/
+
+.text-center {
+	text-align: center;
+}
+.wrapper {
+	background-color: rgba(106, 15, 194, .2);
+	margin: 0 auto;
+	padding: 2em;
+	width: 70em;
+
 }
 /* ---------navbar---------------*/
 nav {
@@ -26,7 +40,7 @@ nav li{
 	overflow:hidden;
 }
 
-nav a{
+#navButton{
 	color:#FFF;
 	text-decoration:none;
 }
@@ -34,12 +48,15 @@ nav a{
 nav p{
 	padding:0px 5px;
 }
+li.navGallery > p > a{
+		text-decoration: none;
+}
 
 nav .subtext{
 		padding-top:15px;
-	}
 
-/*Nav Color Classes*/
+	}
+/* button class selectors */
 nav .navHome{background:#995DD5;}
 nav .navGallery{background:#8034cb;}
 nav .navBlog{background: #732fb6;}
@@ -48,10 +65,59 @@ nav .navContact{background:#401a65;}
 
 /*END---------navbar---------------END*/
 
+/*---------Social Media Bar---------------*/
+
+.socialSideContent {
+	position: fixed;
+}
+.socSideBar{
+		list-style: none;
+		font-size: 2em;
+		padding: 2em;
+		color: #732fb6;
+}
+.twitter {
+	color: #4099FF;
+	transition: 1s ease;
+}
+.twitter:hover {
+	color: #732fb6;
+}
+.fbSocBar {
+	color: #401a65;
+	transition: 1s ease;
+}
+.fbSocBar:hover {
+	color: #995DD5;
+
+}
+/*END---------Social Media Bar---------------END*/
+
 /*---------Top Section---------------*/
 #top{
 	padding-top: 200px;
 }
 
+.left-col {
+	width: 65%;
+	margin: 0 auto;
+	display: inline-block;
+	float: left;
+}
+.left-col p {
+	padding: 1.375em;
+}
+div.left-col > h3 {
+	font-size: 3em;
+}
+.right-col {
+	border-left: #6A0FC2 1px solid;
+	width: 35%;
+	margin: 1em auto;
+	display: inline-block;
+	padding: 1em 3em;
+}
 
 /*END---------Top Section---------------END*/
+
+
