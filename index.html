@@ -9,84 +9,95 @@
 
 </head>
 <body>
-<!--Facebook API-->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1686825698222157',
-      xfbml      : true,
-      version    : 'v2.6'
-    });
-  };
+	<!--Facebook API-->
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId      : '1686825698222157',
+				xfbml      : true,
+				version    : 'v2.6'
+			});
+		};
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+		(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 
 	<nav>
-		<div id='navBar'>
-		
-			<ul class="navMenu">
-				<li><a href="#contact">Contact</a></li>
-				
-				<li><a href="#ourStory">Our Story</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#gallery">Gallery</a></li>
-				<li><a href="#">Home</a></li>
-			</ul>
-		</div>
+		<ul>
+			<li class="navHome text-center">
+				<p><a href="#">Home</a></p>
+				<p class="subtext">Whats new!</p>
+			</li>
+			<li class="navGallery text-center">
+				<p><a href="#">Gallery</a></p>
+				<p class="subtext"><a href='#'>Wedding</a></p>      
+				<p class="subtext"><a href='#'>Corporate</a></p>
+			</li>
+			<li class="navBlog text-center">
+				<p><a href="#">Blog</a></p>
+				<p class="subtext">Where our heads are at!</p>
+			</li>
+			<li class="navStory text-center">
+				<p><a href="#">Our Story</a></p>
+				<p class="subtext">How we got here!</p>
+			</li>
+			<li class="navContact text-center">
+				<p><a href="#">Contact</a></p>
+				<p class="subtext">Tell us what you need!</p>
+			</li>
+		</ul>
 	</nav>
 
-	<section>
-		<div class="title">
-			<h1 class="titleText centerText"></h1>
-		</div>
-	</section>
-	<section class="content">
+<!-- <section class="socialSideContent">
+	<ul class="socSideBar"> 
+		<li><i class="fa fa-facebook"></i></li>
+		<li><i class="fa fa-twitter"></i></li>
+		<li><i class="fa fa-instagram"></i></li>
+	</ul>
+</section> -->
+
+	<section class="content" id="top">
 		<div class="wrapper">
-			<ul class="socSide"> 
-				<li><i class="fa fa-facebook"></i></li>
-				<li><i class="fa fa-twitter"></i></li>
-				<li><i class="fa fa-instagram"></i></li>
-			</ul>
+			
 			<div class="colMain">
 				<h3>Uniquely MK Events</h3>
 				<p> Here at Uniquely MK Events we hope to make your special events stress-free and memorable in whatever way you need! Whether it is a quick chat to get your ducks in a row, full-blown planning and execution, or somewhere in between, we use our experience and expertise to make your vision come to life.</p>
 			</div>
 			<div class="colSide">
-			<iframe class='noScroll' src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Funiquelymkevents&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				<iframe class='noScroll' src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Funiquelymkevents&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<div class="centerDiv">		
-<a class="twitter-timeline" href="https://twitter.com/UniqueMKEvents">Tweets by UniqueMKEvents</a>
-</div>		
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<div class="centerDiv">		
+					<a class="twitter-timeline" href="https://twitter.com/UniqueMKEvents">Tweets by UniqueMKEvents</a>
+				</div>		
 
 			</div>
 		</div>	
 		<div class="wrapper" id="gallery">
-		<div class="imgGallery">
+			<div class="imgGallery">
 
-			<div class="rowTop">
+				<div class="rowTop">
 
-				<img src="img/Cucina.png" alt="" class="left">
-				<img src="img/Fuschia.jpg" alt="" class="right">
-				
+					<img src="img/Cucina.png" alt="" class="left">
+					<img src="img/Fuschia.jpg" alt="" class="right">
+
+				</div>
+				<div class="rowBot">
+					<img src="img/Fuschia2.jpg" alt="" class="left">
+					<img src="img/Grad.jpg" alt="" class="right">
+				</div>
 			</div>
-			<div class="rowBot">
-				<img src="img/Fuschia2.jpg" alt="" class="left">
-				<img src="img/Grad.jpg" alt="" class="right">
-			</div>
-		</div>
 		</div>
 		<div class="wrapper" id='ourStory'>
 			<div class="about">
-			<h3>We Will Make Your Event Memorable!</h3>
+				<h3>We Will Make Your Event Memorable!</h3>
 				<div class="profile">
 					<h3 class='centerText'>Marisa</h3>
 					<img src="img/Marisa.jpg" alt="Marisa" class="headShot">
@@ -100,24 +111,27 @@
 				</div>
 				<div class="profile">
 					<div class="headShotMini">
-							
+
 						<h3 > <img src="img/Krystyna.jpg" alt="Krystyna" class="headShot"><img src="img/Marisa2.jpg" alt="Marisa" class="headShot">Together,</h3>
-					
+
 					</div>
 					<p> this dynamic duo makes up the M and the K of Uniquely MK Events! We understand that each event is as unique as you, and we work to make that seen.At MK Events, nothing is cookie-cutter. We take your unique and creative vision and make it happen. Lets get in touch and see if we can work with you, have some fun, and create an event that is as memorable as it is seamless!
 					</p>
 				</div>
 			</div>
 		</div>	
-	<div class="wrapper">
-		<div class="contact" id="contact"></div>
-	</div>
+		<div class="wrapper">
+			<div class="contact" id="contact"></div>
+		</div>
 	</section>
 
 	<p class="copyright"> &copy MKEvents 2016 </p>
 	
-		
-	
+
+	<!--javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
