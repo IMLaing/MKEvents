@@ -16,5 +16,17 @@ $(document).ready(function(){
 	$("li.navLi").mouseout(function(){
 		$(this).stop().animate({height:'50px'},{queue:false, duration:600, easing: 'easeOutBounce'});
 	});
-	
+
+// init Masonry
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+	});
+
+// init imagesloaded
+$grid.imagesLoaded().progress( function() {
+	$grid.masonry('layout');
+	});
+
 });

@@ -122,3 +122,42 @@ div.left-col > h3 {
 /*END---------Top Section---------------END*/
 
 
+/*-----------------Masonry----------------*/
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item--width2 { 
+	width: 40%; 
+}
+.grid-item--width3 { 
+	width:  60%; 
+}
+
+.grid-item--height2 { 
+	height: 200px; 
+}
+.grid-item--height3 { 
+	height: 260px; 
+}
+.grid-item--height4 { 
+	height: 360px; 
+}
+.grid-sizer,
+.grid-item {
+  width: 33.33%;
+}
+
+.grid-item {
+  	float: left;
+	padding: 10px;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+/*END--------------Masonry-------------END*/
