@@ -6,25 +6,34 @@
     box-sizing: inherit; 
 }
 body {
-	background: rgba(106, 15, 194, .1);
+	background:rgba(106, 15, 194, .1);
 	font-family: Play;
 }
 
 /*-----CUSTOM----CSS----CLASSES------*/
-
+.bigTitle {
+	font-family: 'Shadows Into Light';
+	font-size: 4em;
+	margin: 0px; 
+}
 .text-center {
 	text-align: center;
 }
 .wrapper {
-	background-color: rgba(106, 15, 194, .2);
 	margin: 0 auto;
 	padding: 2em;
-	width: 70em;
+	width: 70%;
+}
 
+.fixedbackground {
+	background-image: url('../img/Fuschia2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 /* ---------navbar---------------*/
 nav {
-	width: 500px;
+	width: 550px;
 	margin: 0 auto;
 }
 nav ul{
@@ -57,6 +66,13 @@ nav .subtext{
 		padding-top:15px;
 
 	}
+nav .navContact .subtext{
+	padding-top: 5px;
+	}
+li.navContact.text-center.navLi > p:nth-child(3) > a {
+	text-decoration: none;
+	color: white;
+}
 /* button class selectors */
 nav .navHome{background:#995DD5;}
 nav .navGallery{background:#8034cb;}
@@ -121,6 +137,86 @@ div.left-col > h3 {
 
 /*END---------Top Section---------------END*/
 
+/*------------indexGallery Section------*/
+
+.indexGalleryImg img{
+	height: 300px;
+	width: 100%;
+	margin:0;
+	padding: 5px 0;
+	border: 0;
+	display: inline-block;
+	}
+.imageLabel{
+	position: relative; 
+   
+}
+.imageLabel h2{
+	position:absolute;
+	top: 30px;
+	left: 15px;
+}
+.imageLabel h2 span{
+	color: white; 
+   	background: rgba(0, 0, 0, 0.7);
+   	border-radius: 5%;
+   	padding: 5px;
+   
+}
+#labelDiv{
+	margin: 0 auto;
+	width: 80%;
+}
+#labelSpan {
+	display: none;
+}
+#labelDiv:hover #labelSpan {
+	display:inline-block;
+}
+
+/*END---------indexGallery Section---END*/
+
+/*------------Gallery-----------*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background:rgba(106, 15, 194, .2);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #995DD5;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background:rgba(106, 15, 194, .8);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+/*END---------Gallery--------END*/
 
 /*-----------------Masonry----------------*/
 .grid:after {
@@ -129,22 +225,6 @@ div.left-col > h3 {
   clear: both;
 }
 
-.grid-item--width2 { 
-	width: 40%; 
-}
-.grid-item--width3 { 
-	width:  60%; 
-}
-
-.grid-item--height2 { 
-	height: 200px; 
-}
-.grid-item--height3 { 
-	height: 260px; 
-}
-.grid-item--height4 { 
-	height: 360px; 
-}
 .grid-sizer,
 .grid-item {
   width: 33.33%;
