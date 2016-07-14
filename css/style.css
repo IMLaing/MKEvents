@@ -31,6 +31,18 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
+.clearfix {
+  overflow: auto;
+}
+/* ---------logo---------------*/
+.miniLogo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 120px;
+    width:160px;
+}
 /* ---------navbar---------------*/
 nav {
 	width: 550px;
@@ -69,10 +81,22 @@ nav .subtext{
 nav .navContact .subtext{
 	padding-top: 5px;
 	}
-li.navContact.text-center.navLi > p:nth-child(3) > a {
+li.navContact.text-center.navLi > p:nth-child(3) > a, p:nth-child(2) > a {
 	text-decoration: none;
 	color: white;
 }
+nav .navGallery .subtext{
+	padding-top: 0 ;
+	line-height: .7;
+}
+.navGallery a {
+
+	transition: .6s ease ;
+}
+.navGallery a:hover{
+	color:#401a65;
+}
+
 /* button class selectors */
 nav .navHome{background:#995DD5;}
 nav .navGallery{background:#8034cb;}
@@ -85,13 +109,13 @@ nav .navContact{background:#401a65;}
 /*---------Social Media Bar---------------*/
 
 .socialSideContent {
-	position: fixed;
+	position: absolute;
+	top: .5em;
+	right: 1em ;
+	font-size: 2.5em;
 }
-.socSideBar{
-		list-style: none;
-		font-size: 2em;
-		padding: 2em;
-		color: #732fb6;
+.smaller {
+	width: 2em;
 }
 .twitter {
 	color: #4099FF;
@@ -133,50 +157,84 @@ div.left-col > h3 {
 	margin: 1em auto;
 	display: inline-block;
 	padding: 1em 3em;
+	
+}
+
+.services{
+	width: 80%;
+	margin: auto;
+	font-size: 1.5em;
+	padding-bottom: 3em;
 }
 
 /*END---------Top Section---------------END*/
 
 /*------------indexGallery Section------*/
 
-.indexGalleryImg img{
-	height: 300px;
+
+.weddingThumbnail{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../img/wedding.jpg");
 	width: 100%;
-	margin:0;
-	padding: 5px 0;
-	border: 0;
-	display: inline-block;
-	}
-.imageLabel{
-	position: relative; 
-   
+	height: 500px;
+	background-position: center;
 }
-.imageLabel h2{
-	position:absolute;
-	top: 30px;
-	left: 15px;
+.functionThumbnail{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../img/function.jpg");
+	width: 100%;
+	height: 500px;
+	background-position: center;
 }
-.imageLabel h2 span{
-	color: white; 
-   	background: rgba(0, 0, 0, 0.7);
-   	border-radius: 5%;
-   	padding: 5px;
-   
+.corporateThumbnail{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../img/corporate.jpg");
+	width: 100%;
+	height: 500px;
+	background-position: center;
 }
-#labelDiv{
-	margin: 0 auto;
-	width: 80%;
+.fundraiserThumbnail{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../img/fundraiser.jpg");
+	width: 100%;
+	height: 500px;
+	background-position: center;
 }
-#labelSpan {
-	display: none;
+#galleryLabel {
+	position: relative;
+	left: 100px;
+	top: 100px;
+	background: rgba(0,0,0,.3);
+	float:left;
+	padding: 5px;
+	border-radius:5%;
+	color: White;
+	font-size: 4em;
+	visibility: hidden;
+  	opacity: 0;
+	transition: visibility 0s, opacity 0.3s linear;
+
+
+
 }
-#labelDiv:hover #labelSpan {
-	display:inline-block;
+.weddingThumbnail:hover #galleryLabel, .functionThumbnail:hover #galleryLabel, .corporateThumbnail:hover #galleryLabel, .fundraiserThumbnail:hover #galleryLabel{
+	visibility: visible;
+  	opacity: 1;
+
+}
+
+.gallerySelection div {
+	margin: 2.750em auto;
+	padding-top: 100px;
 }
 
 /*END---------indexGallery Section---END*/
 
-/*------------Gallery-----------*/
+/*------------Wedding Gallery-----------*/
 #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -216,7 +274,40 @@ div.left-col > h3 {
     color: #fff;
     top: 5px;
 }
-/*END---------Gallery--------END*/
+/*END---------Wedding Gallery--------END*/
+
+/*------------About Us-----------*/
+
+.about > h1 {
+	font-size: 3em;
+}
+
+.headShot{
+	border-radius: 50%;
+	height:150px;
+	width: 150px;
+	float:left;
+
+}
+.headShotMini {
+	width: 340px;
+	margin: 0 auto;	
+}
+#ourStory div:nth-child(4) > p {
+	text-align: justify;
+	}
+
+.profile h3 {
+	margin: 1.375em;
+	font-size: 3em;
+}
+
+.profile p {
+	font-size:1.375em;
+	line-height: 1.5em;
+}
+
+/*END---------About Us--------END*/
 
 /*-----------------Masonry----------------*/
 .grid:after {
@@ -241,3 +332,5 @@ div.left-col > h3 {
 }
 
 /*END--------------Masonry-------------END*/
+
+

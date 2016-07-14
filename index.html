@@ -9,24 +9,6 @@
 
 </head>
 <body>
-	<!--Facebook API-->
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-				appId      : '1686825698222157',
-				xfbml      : true,
-				version    : 'v2.6'
-			});
-		};
-
-		(function(d, s, id){
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) {return;}
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/sdk.js";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
 
 	<!--Navigation Bar-->
 	<nav>
@@ -37,15 +19,17 @@
 			</li>
 			<li class="navGallery text-center navLi" >
 				<p><a href="gallery.html" id="navButton" >Gallery</a></p>
-				<p class="subtext"><a href='wedding.html'>Wedding</a></p>      
-				<p class="subtext"><a href='#'>Corporate</a></p>
+				<p class="subtext"><a href='wedding.html'>Weddings</a></p>      
+				<p class="subtext"><a href='#'>Social</a></p>
+				<p class="subtext"><a href='#'>Corporate</a></p>      
+				<p class="subtext"><a href='#'>Holiday</a></p>
 			</li>
-			<li class="navBlog text-center navLi" >
+			<li class="navBlog text-center navLi">
 				<p><a href="#" id="navButton" >Blog</a></p>
 				<p class="subtext">Where our heads are at!</p>
 			</li>
 			<li class="navStory text-center navLi">
-				<p><a href="#" id="navButton" >Our Story</a></p>
+				<p><a href="about.html" id="navButton" >Our Story</a></p>
 				<p class="subtext">How we got here!</p>
 			</li>
 			<li class="navContact text-center navLi">
@@ -54,110 +38,109 @@
 				<p class="subtext"> <a href="mailto:info@mkeventplanningboston.com"><i class="fa fa-envelope"></i>Email Us!</a> </p>
 				
 			</li>
+
+		</ul>
+		<ul class="socialSideContent">
+			<li class="smaller"><a href="https://www.facebook.com/uniquelymkevents/"><i class="fa fa-facebook text-center fbSocBar"></i></a></li>
+			<li class="smaller"><a href="https://twitter.com/UniqueMKEvents"><i class="fa fa-twitter text-center twitter"></i></a></li>
+			<li class="smaller"><a href="https://www.instagram.com/uniquelymkevents/"><i class="fa fa-instagram text-center fbSocBar"></i></a></li>
 		</ul>
 	</nav>
-
-	<section class="socialSideContent">
-		<ul class="socSideBar"> 
-			<li><a href="https://www.facebook.com/uniquelymkevents/"><i class="fa fa-facebook text-center fbSocBar"></i></a></li>
-			<li><a href="https://twitter.com/UniqueMKEvents"><i class="fa fa-twitter text-center twitter"></i></a></li>
-			<li><a href="https://www.instagram.com/uniquelymkevents/"><i class="fa fa-instagram text-center fbSocBar"></i></a></li>
-		</ul>
-	</section>	
+	<!-- BRAND LOGO FIXED -->
+	<img class="miniLogo" src="img/MKMinilogo.png" alt="logo">
 
 
 	<section class="content" id="top">
 		<div class="wrapper">
 			<div class="left-col">
 				<h3 class="text-center">Uniquely MK Events</h3>
-				<p> Here at Uniquely MK Events we hope to make your special events stress-free and memorable in whatever way you need! Whether it is a quick chat to get your ducks in a row, full-blown planning and execution, or somewhere in between, we use our experience and expertise to make your vision come to life.</p>
+				<h1> We offer Planning for all occasions! </h1>
+					
+				<table class='services clearfix'>
+					<tr>
+    					<td>Wedding Planning</td>
+    					<td>Corporate Events</td>
+    				</tr>
+    				<tr>
+    					<td> Bar/Bat Mitzvah</td>
+    					<td> Reunions</td>
+    				</tr>
+    				<tr>
+    					<td> Anniversaries</td>
+    					<td> Birthday Parties</td>
+    				</tr>
+    				<tr>
+    					<td> Anniversaries</td>
+    					<td> Non-Profit</td>
+    				</tr>
+    				<tr>
+    					<td> Launch Parties</td>
+    					<td> Fundraisers</td>
+    				</tr>
+   				</table>	
+   				<p> Here at Uniquely MK Events we hope to make your special events stress-free and memorable in whatever way you need! Whether it is a quick chat to get your ducks in a row, full-blown planning and execution, or somewhere in between, we use our experience and expertise to make your vision come to life.</p>			
 			</div>
-			<div class="right-col">
-				<iframe class='noScroll' src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Funiquelymkevents&tabs=timeline&width=280&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="274" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				<div class="right-col">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Funiquelymkevents&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
-				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-				<a class="twitter-timeline" data-width="600" data-height="300" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/UniqueMKEvents">Tweets by UniqueMKEvents</a>
-
-
-
-			</div>
-		</div>	
-	</section>
-
-	<section class='indexGallery'>
-	<div class="wrapper" id="gallery">
-		<div class="indexGalleryImg">
-		<div class="imageLabel" id="labelDiv">
-			<a href="wedding.html"> 
-				<img src="img/socmedia/cakemk.jpg" alt="wedding gallery"> 
-				<h2><span id="labelSpan">Weddings</span></h2>
-			</a>
-		</div>
-		<div class="imageLabel" id="labelDiv">
-			<a href="wedding.html"> 
-				<img src="img/Grad.jpg" alt="functions" >
-				<h2><span id="labelSpan">Functions</span></h2>
-			</a>
-		</div>
-		<div class="imageLabel" id="labelDiv">
-			<a href="wedding.html"> 
-				<img src="img/HTBARH5.jpg" alt="corporate">
-				<h2><span id="labelSpan">Coporate Events</span></h2>
-			</a>
-		</div>
-		<div class="imageLabel" id="labelDiv">
-			<a href="wedding.html"> 
-				<img src="img/Fuschia2.jpg" alt="fundraisers" >
-				<h2><span id="labelSpan">Fundraisers</span></h2>
-			</a>
-		</div>	
-			
-			
-		</div>
-
-	</div>
-	</section>
-
-				<!--
-		<div class="wrapper" id='ourStory'>
-			<div class="about">
-				<h3>We Will Make Your Event Memorable!</h3>
-				<div class="profile">
-					<h3 class='centerText'>Marisa</h3>
-					<img src="img/Marisa.jpg" alt="Marisa" class="headShot">
-					<p>Marisa has done weddings for 5+ years. She’s had the opportunity to host, waitress, bartend, plan, coordinate, and manage. Marisa graduated from Northeastern University with a BA in English and her impeccable written and verbal communication skills help her to stay organized and in tune to each event she runs. Following college Marisa worked as the function manager for a restaurant within a 4 Diamond rated hotel planning and managing events of 10-100 before working for Laurel Events, which won best wedding planner 3 years in a row through Wedding Wire. Working on her own allows Marisa the opportunity to become an advocate and friend to her clients on a more personal level, while having more time to focus on the little details that make your event special. Remaining cool under pressure and always thinking ahead – weddings are Marisa’s specialty.</p>
 				</div>
-				<div class="profile">
-					<h3 class='centerText'>Krystna</h3>
-					<img src="img/Krystyna.jpg" alt="Krystyna" class="headShot">
-					<p>Krystyna and Marisa met while working at the same hotel restaurant. Krystyna has a flair for going the extra mile in whatever way is needed. She is a hard worker with a business background. Finding her passion for events and hospitality was a happy accident as she worked her way through earning an Economics degree from Boston University. Krystyna is skilled at managing a catering staff for your next holiday or graduation party, and enjoys experimenting with different designs to make your event as aesthetically appealing as possible for you and your guests.
-					</p>
-				</div>
-				<div class="profile">
-					<div class="headShotMini">
+			</div>	
+		</section>
 
-						<h3 > <img src="img/Krystyna.jpg" alt="Krystyna" class="headShot"><img src="img/Marisa2.jpg" alt="Marisa" class="headShot">Together,</h3>
-
+		
+		<section class="gallerySelection">
+			<div class="wrapper">
+				<a href="wedding.html">
+					<div class="weddingThumbnail">
+						<h2 id="galleryLabel">Weddings</h2>
 					</div>
-					<p> this dynamic duo makes up the M and the K of Uniquely MK Events! We understand that each event is as unique as you, and we work to make that seen.At MK Events, nothing is cookie-cutter. We take your unique and creative vision and make it happen. Lets get in touch and see if we can work with you, have some fun, and create an event that is as memorable as it is seamless!
-					</p>
-				</div>
+				</a>
+				<a href="gallery.html">
+					<div class="functionThumbnail">
+						<h2 id="galleryLabel">Social</h2>
+					</div>
+				</a>
+				<a href="#.html">
+					<div class="corporateThumbnail">
+						<h2 id="galleryLabel">Corporate</h2>
+					</div>
+				</a>
+				<a href="#.html">
+					<div class="fundraiserThumbnail">
+						<h2 id="galleryLabel">Holiday</h2>
+					</div>
+				</a>
 			</div>
-		</div>	
-		<div class="wrapper">
-			<div class="contact" id="contact"></div>
-		</div>
-	</section>-->
+		</section>	
 
-	<p class="copyright"> &copy MKEvents 2016 </p>
-	
 
-	<!--javascript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/masonry.js"></script>
-	<script type="text/javascript" src="js/imagesloaded.js"></script>
 
-</body>
-</html>
+		<p class="copyright"> &copy MKEvents 2016 </p>
+
+		<!--Facebook API-->
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '1686825698222157',
+					xfbml      : true,
+					version    : 'v2.6'
+				});
+			};
+
+			(function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!--javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/masonry.js"></script>
+		<script type="text/javascript" src="js/imagesloaded.js"></script>
+
+	</body>
+	</html>
