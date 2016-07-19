@@ -8,6 +8,7 @@
 body {
 	background:rgba(106, 15, 194, .1);
 	font-family: Play;
+
 }
 
 /*-----CUSTOM----CSS----CLASSES------*/
@@ -100,7 +101,7 @@ nav .navGallery .subtext{
 /* button class selectors */
 nav .navHome{background:#995DD5;}
 nav .navGallery{background:#8034cb;}
-nav .navBlog{background: #732fb6;}
+nav .navTestimonials{background: #732fb6;}
 nav .navStory{background:#662aa2;}
 nav .navContact{background:#401a65;}
 
@@ -309,6 +310,42 @@ div.left-col > h3 {
 
 /*END---------About Us--------END*/
 
+/*------------Testimonials-----------*/
+
+div.testimonialContainer{
+	width: 31%;
+	height: 350px;
+	float: left;
+	font-size:1.2em;
+	margin: 5px;
+	display: inline-block;
+	background:rgba(106, 15, 194, .1);
+	padding: 5px;
+}
+.testimonialContainer h2{
+	margin: 1.375em;
+
+}
+.testimonialPic{
+	height: 350px;
+	width: auto;
+	border-radius: 5px;
+}
+.testimonialContainerhalf{
+	width: 45%;
+	display: inline-block;
+	
+	
+}
+.testimonialContainerhalfRight{
+	float: right;
+	width: 45%;
+	
+}
+
+/*END---------Testimonials--------END*/
+
+ 
 /*-----------------Masonry----------------*/
 .grid:after {
   content: '';
