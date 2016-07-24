@@ -22,6 +22,7 @@ h1, h2, h3 {
 	font-family: 'Rock Salt', cursive;
 }
 
+
 .footer {
   width: 100%;
   padding: 25px;
@@ -31,7 +32,7 @@ h1, h2, h3 {
   left: 0;
 }
 .footerPush {
-	height: 500px;
+	height: 350px;
 
 }
 .footerPushIndex {
@@ -43,8 +44,8 @@ h1, h2, h3 {
 	text-align: center;
 }
 
-.fixedbackground {
-	background-image: url('../img/Fuschia2.jpg');
+.fixedBackground {
+	background-image: url('../img/MKMinilogo.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -60,14 +61,20 @@ h1, h2, h3 {
   text-align: center;
 }
 
-.navbar li a{
-	
-  color: black;
-  text-transform: uppercase;
-  text-decoration: none;
+
+.packageButton {
+	padding: 10px;
+	border-radius: 10px;
+
 }
 
-.navbar li a:after{
+ a{
+color: black;
+  text-transform: uppercase;
+  text-decoration: none !important;
+}
+
+ a:after{
   display:block;
   content:'';
   border-bottom: 1px solid #995DD5;
@@ -75,7 +82,7 @@ h1, h2, h3 {
   transition: transform 300ms ease-in-out;
  
 }
-.navbar li a:hover:after{
+ a:hover:after{
   transform: scaleX(1);
 }
 
@@ -323,6 +330,96 @@ background:#995DD5;
 	margin: 0 auto;
 }
 /*END---------CONTACT--------END*/
+
+/*--------Services--------*/
+.serviceBackground {
+	padding:20px;
+	background-image: url('../img/socmedia/mk2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
+	border-radius: 25px;
+	
+}
+
+.serviceBackground2 {
+	padding:20px;
+	background-image: url('../img/socmedia/mk21.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
+	border-radius: 25px;
+	
+}
+
+.circleQuote{
+	border-radius: 100%;
+	margin: 15px;
+	width: 20%;
+	height: 20%;
+	text-align: center;
+}
+.circleQuote p {
+	padding: 96px 0;
+	font-size: 1.3em;
+	color: white;
+	 transform: skew(20deg);
+   -ms-transform: skew(20deg); /* IE 9 */
+   -moz-transform: skew(20deg); /* Firefox */
+   -webkit-transform: skew(20deg); /* Safari and Chrome */
+   -o-transform: skew(20deg); /* Opera */ 
+
+}
+
+.serviceText {
+	font-size: 2em;
+}
+
+.serviceText h1 {
+	padding-top: 2.735em;
+}
+.serviceText p {
+	padding-top: 1.375em;
+}
+#firstQuote {
+background-color:rgba(153, 93, 213, .6);
+}
+#secondQuote {
+background-color:rgba(153, 93, 213, .6);
+}
+#thirdQuote {
+background-color:rgba(153, 93, 213, .6);
+}
+#fourthQuote {
+background-color:rgba(153, 93, 213, .6);
+
+}
+.impact {
+	font-size: 2em;
+	padding: 1.375em;
+}
+.customPackage {
+	font-size: 1.5em;
+	padding: 1.735em;
+}
+.customPackage a{
+	font-size: 2em;
+	color: #995DD5;
+	text-decoration: none;
+	transition: 300ms ease-in-out;
+}
+
+.customPackage a:hover{
+	text-shadow: 10px 10px 5px #888888;
+	
+}
+.noDec {
+	color: #995DD5;
+}
+
+/*END---------Services--------END*/
 
 /*-----------------Masonry----------------*/
 .grid:after {
