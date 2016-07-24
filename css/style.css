@@ -308,7 +308,22 @@ background:#995DD5;
 
 /*END---------Testimonials--------END*/
 
- 
+ /*--------Contact--------*/
+
+.contactHead{
+	display:inline-block;
+	padding: 15px;
+}
+.contactHead a {
+	color: #995DD5;
+}
+
+#googleForm {
+	width: 100%;
+	margin: 0 auto;
+}
+/*END---------CONTACT--------END*/
+
 /*-----------------Masonry----------------*/
 .grid:after {
   content: '';
