@@ -4,6 +4,8 @@
 }
 *, *:before, *:after {
     box-sizing: inherit; 
+    padding: 0;
+    margin: 0;
 }
 body {
 	background:whitesmoke;
@@ -30,6 +32,10 @@ h1, h2, h3 {
 }
 .footerPush {
 	height: 500px;
+
+}
+.footerPushIndex {
+	height: 800px;
 
 }
 
@@ -101,6 +107,17 @@ h1, h2, h3 {
 	width: 2em;
 	
 }
+.mainLogoCenter{
+	width: 45%;
+	 display: inline-block;
+    vertical-align: middle;
+}
+.Centerer
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
 /* button class selectors 
 background:#995DD5;
 #8034cb;
@@ -117,6 +134,8 @@ background:#995DD5;
 	width: 100%;
 	border-top: 5px #995DD5 solid;
 	border-bottom: 15px #995DD5 solid;
+	position:absolute;
+    text-align: center;
 
 }
 
