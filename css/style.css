@@ -68,13 +68,13 @@ h1, h2, h3 {
 
 }
 
- a{
+ nav a{
 color: black;
   text-transform: uppercase;
   text-decoration: none !important;
 }
 
- a:after{
+nav a:after{
   display:block;
   content:'';
   border-bottom: 1px solid #995DD5;
@@ -82,7 +82,7 @@ color: black;
   transition: transform 300ms ease-in-out;
  
 }
- a:hover:after{
+nav a:hover:after{
   transform: scaleX(1);
 }
 
@@ -332,9 +332,21 @@ background:#995DD5;
 /*END---------CONTACT--------END*/
 
 /*--------Services--------*/
+.text-white {
+	color: #995DD5;
+}
+
+button a:hover{
+	text-decoration: none;
+	color: purple;
+	transition: .1s;
+	font-weight: bolder;
+}
+
+
 .serviceBackground {
 	padding:20px;
-	background-image: url('../img/socmedia/mk2.jpg');
+	background-image: url('../img/function.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 500px;
@@ -417,7 +429,9 @@ background-color:rgba(153, 93, 213, .6);
 }
 .noDec {
 	color: #995DD5;
+	
 }
+
 
 /*END---------Services--------END*/
 
