@@ -325,10 +325,22 @@ background:#995DD5;
 	color: #995DD5;
 }
 
-#googleForm {
-	width: 100%;
-	margin: 0 auto;
+label {
+  display: block;
 }
+
+form {
+  font-weight: 900;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px #995DD5 solid;
+}
+form > input {
+	width: 70%;
+	margin: 25px;
+}
+
 /*END---------CONTACT--------END*/
 
 /*--------Services--------*/
@@ -366,6 +378,12 @@ button a:hover{
 	
 }
 
+.circleHolder{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	left: 4%;
+}
 .circleQuote{
 	border-radius: 100%;
 	margin: 15px;
@@ -385,13 +403,15 @@ button a:hover{
 
 }
 
+hr {
+border: 1px #995DD5 solid;
+}
+
 .serviceText {
 	font-size: 2em;
 }
 
-.serviceText h1 {
-	padding-top: 2.735em;
-}
+
 .serviceText p {
 	padding-top: 1.375em;
 }
