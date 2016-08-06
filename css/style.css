@@ -22,7 +22,9 @@ h1, h2, h3 {
 	font-family: 'Rock Salt', cursive;
 }
 
-
+.upSize {
+	font-size: 1.3em;
+}
 .footer {
   width: 100%;
   padding: 25px;
@@ -40,6 +42,9 @@ h1, h2, h3 {
 
 }
 
+.footerContact {
+	margin: 0 0 0 15px;
+}
 .text-center {
 	text-align: center;
 }
@@ -84,6 +89,13 @@ nav a:after{
 }
 nav a:hover:after{
   transform: scaleX(1);
+}
+
+@media (max-width: 1040px) {
+  #navButton.active
+ {
+    display: none;
+  }
 }
 
 .socialSideContent {
@@ -454,6 +466,26 @@ background-color:rgba(153, 93, 213, .6);
 
 
 /*END---------Services--------END*/
+
+/*------------Blog-----------*/
+.blog {
+	width: 50em;
+	margin: 0 auto;
+}
+
+.leftBlogImg{
+	float: left;
+	margin: 0 10px 0 0;
+	height: 13em;
+	width: auto;
+}
+
+.blog4Col{
+	height: 15em;
+	width: 100%;
+}
+	
+/*END---------Blog--------END*/
 
 /*-----------------Masonry----------------*/
 .grid:after {
