@@ -395,10 +395,27 @@ form {
   margin: 0 auto;
   text-align: center;
   border: 1px #995DD5 solid;
+  font-size: 1.2em;
+  border-radius: 25px;
 }
 form > input {
 	width: 70%;
 	margin: 25px;
+	padding: 1em;
+}
+
+#submitForm {
+	padding: .8em;
+	color: whitesmoke;
+	background: #995DD5;
+	border: none;
+	border-radius: 25px;
+	font-size: 2em;
+	transition: .2s ease;
+	border: 2px transparent solid;
+}
+#submitForm:hover {
+	border: 2px black solid;
 }
 
 /*END---------CONTACT--------END*/
