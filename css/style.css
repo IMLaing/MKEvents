@@ -93,10 +93,22 @@ nav a:after{
 nav a:hover:after{
   transform: scaleX(1);
 }
-@media (max-width: 969px) {
+
+@media screen and (min-width:360px){
+	a#navButton{
+		font-size: 1.3em;
+		padding:3px;
+		margin-top: 15px;
+	}
+
+}
+
+
+@media  (max-width: 969px) {
     .navbar-header {
         float: none;
     }
+
     .navbar-left,.navbar-right {
         float: none !important;
     }
@@ -139,6 +151,7 @@ nav a:hover:after{
        box-shadow: none;
     }
 }
+
 @media (max-width: 1040px) {
   #navButton.active
  {
